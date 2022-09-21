@@ -23,9 +23,16 @@ body {
     --text-grey: rgba(113, 113, 113, 1);
     --lime-green: rgba(173, 255, 47, 1);
 }
-.flex{
+
+.flex {
     display: flex;
 }
+
+.color-white {
+    color: var(white);
+   
+}
+
 /* Utilities */
 
 .container {
@@ -42,7 +49,8 @@ body {
     font-size: 12px;
     margin: 20px 20px;
 }
-.barra-top a{
+
+.barra-top a {
     color: white;
     text-decoration: none;
 }
@@ -72,7 +80,7 @@ main {
     position: fixed;
     top: 0;
     z-index: 800;
-    
+
 }
 
 .main-content {
@@ -81,12 +89,40 @@ main {
     background-color: var(--deep-blue);
 }
 
+
+.barra-laterale {
+    width: 230px;
+    height: 100%;
+    background-color: var(--nero-100)
+}
+
+#logo {
+    height: 60px;
+    display: inline;
+    margin-top: 20px;
+}
+
+/* inner content  */
+
+.inner-content {
+    height: 100%;
+    color: white;
+    margin-top: 0px;
+    overflow-y: auto;
+}
+
 .navbar {
     margin-top: 10px;
     display: flex;
-    height: 70px;
     flex-wrap: wrap;
     justify-content: center;
+}
+.titolo-recenti{
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
 }
 
 .option {
@@ -96,28 +132,13 @@ main {
     font-weight: 700;
     padding-top: 100px;
 }
-.option a{
+
+.option a {
     color: white;
     text-decoration: none;
 }
 
-nav {
-    width: 230px;
-    height: 100%;
-    background-color: var(--nero-100)
-}
-#logo {
-    height: 60px;
-    display: inline;
-    margin-top: 20px;
-}
-
-.inner-content {
-    height: 100%;
-    color: white;
-    margin-top: 0px;
-    overflow-y: auto;
-}
+/* footer  */
 
 footer {
     width: 100%;
