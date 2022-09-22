@@ -127,6 +127,7 @@ main {
 }
 
 /* barra laterale  */
+
 .barra-laterale a{
     text-decoration: none;
     color: var(--text-grey);
@@ -190,6 +191,7 @@ main {
     line-height: 30px;
     overflow-y: auto;
 }
+
 .user {
     position: fixed;
     width: 200px;
@@ -380,6 +382,11 @@ footer {
 .button-upgrade:hover {
     transform: scale(1.2);
     cursor: pointer;
+}
+.barra-laterale a:hover{
+    cursor: pointer;
+    color: white;
+    
 }
 
 /* media query */
