@@ -23,9 +23,22 @@
 
             <nav class="barra-laterale">
                 <figure>
-                    <img id="logo" src="img/logo.svg" alt="Spotify">
+                    <img id="logo" src="./img/logo.svg" alt="Spotify">
                 </figure>
-
+                <div class="dist">
+                    <div class="icone-laterali">
+                        <a href=""><img src="./img/home.svg" alt="HomePage" class="icone"></a>
+                        <span><a href="">Home</a></span>
+                    </div>
+                    <div class="icone-laterali">
+                        <a href=""><img src="./img/search.svg" alt="HomePage" class="icone"></a>
+                        <span><a href="">Cerca</a></span>
+                    </div>
+                    <div class="icone-laterali">
+                        <a href=""><img src="./img/libreria.svg" alt="HomePage" class="icone"></a>
+                        <span><a href="">La tua libreria</a></span>
+                    </div>
+                </div>
             </nav>
 
             <!-- fine barra laterale -->
@@ -51,9 +64,10 @@
                         <h2 class="color-white">Recently played</h2>
                     </div>
 
-                    <div class="ascoltati">
+                    <div class="ascoltati" style="margin-right: 10px;">
                         <div class="album">
                             <div class="immagine">
+
                                 <img src="img/metal_lifting.jpg" alt="Heavy Metal">
                                 <i class="far fa-play-circle"></i>
                             </div>
@@ -73,33 +87,33 @@
 
                         <div class="album">
                             <div class="immagine">
-                            <img src="img/aquietplace.jpeg" alt="Heavy Metal">
-                            <i class="far fa-play-circle"></i>
-                        </div>
+                                <img src="img/aquietplace.jpeg" alt="Heavy Metal">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                             <h4 class="titolo">A Quiet Place</h4>
                             <span class="sottotilo">Subtitle</span>
                         </div>
                         <div class="album">
                             <div class="immagine">
-                            <img src="img/split.jpeg" alt="Heavy Metal">
-                            <i class="far fa-play-circle"></i>
-                        </div>
+                                <img src="img/split.jpeg" alt="Heavy Metal">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                             <h4 class="titolo">Split</h4>
                             <span class="sottotilo">Subtitle</span>
                         </div>
                         <div class="album">
                             <div class="immagine">
-                            <img src="img/cure.jpeg" alt="Heavy Metal">
-                            <i class="far fa-play-circle"></i>
-                        </div>
+                                <img src="img/cure.jpeg" alt="Heavy Metal">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                             <h4 class="titolo">A cure wellness</h4>
                             <span class="sottotilo">Subtitle</span>
                         </div>
                         <div class="album">
                             <div class="immagine">
-                            <img src="img/sinister.jpeg" alt="Heavy Metal">
-                            <i class="far fa-play-circle"></i>
-                        </div>
+                                <img src="img/sinister.jpeg" alt="Heavy Metal">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                             <h4 class="titolo">Sinister</h4>
                             <span class="sottotilo">Subtitle</span>
                         </div>
@@ -115,12 +129,16 @@
                     <div class="ascoltati">
 
                         <div class="album">
-                            <img src="img/radar.jpeg" alt="Heavy Metal">
+                            <div class="cover">
+                                <img src="img/radar.jpeg" alt="Heavy Metal">
+                            </div>
                             <h4 class="titolo">A cure wellness</h4>
                             <span class="sottotilo">Subtitle</span>
                         </div>
                         <div class="album">
-                            <img src="img/mixdaily.jpeg" alt="Heavy Metal">
+                            <div class="cover">
+                                <img src="img/mixdaily.jpeg" alt="Heavy Metal">
+                            </div>
                             <h4 class="titolo">Sinister</h4>
                             <span class="sottotilo">Subtitle</span>
                         </div>
@@ -136,12 +154,16 @@
                     <div class="ascoltati">
 
                         <div class="album">
-                            <img src="img/youg.jpeg" alt="Heavy Metal" id="youg">
+                            <div class="cover">
+                                <img src="img/youg.jpeg" alt="Heavy Metal" id="youg">
+                            </div>
                             <h4 class="titolo">Lana del ray</h4>
                             <span class="sottotilo">Bum Bum</span>
                         </div>
-                        <div class="album" id="album2">
-                            <img src="img/einaudi.jpeg" alt="Heavy Metal" id="einaudi">
+                        <div class="album">
+                            <div class="cover">
+                                <img src="img/einaudi.jpeg" alt="Heavy Metal" id="einaudi">
+                            </div>
                             <h4 class="titolo">Ludovico Einaudi</h4>
                             <span class="sottotilo">Nuvole</span>
                         </div>
@@ -156,9 +178,47 @@
 
         </main>
         <!-- FOOTER -->
-        <footer class="flex">
+        <footer>
+            <div class="barra-musicale ">
+
+                <div>
+                    <img id="canzone" src="img/sinister.jpeg" alt="Sinister">
+                </div>
+                <div class="description">
+                    <h4>Sinister</h4>
+                    <div">Brano Nome
+                </div>
+                <div class="simboli">
+                    <i class="far fa-heart words" id="simbolo"></i>
+                    <i class="far fa-folder words"></i>
+                </div>
+
+
+                <div class="player">
+                    <div class="buttons">
+                        <i class="fas fa-random icon"></i>
+                        <i class="fas fa-caret-left icon"></i>
+                        <i class="far fa-play-circle icon"></i>
+                        <i class="fas fa-caret-right icon"></i>
+                        <i class="fas fa-redo icon"></i>
+                    </div>
+                    <div class="bar">
+                        <span class="time">0:25</span>
+                        <div class="progress-bar">
+                            <div class="value"></div>
+                        </div>
+                        <span class="time">4:35</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
 
         </footer>
+
 
     </div>
 

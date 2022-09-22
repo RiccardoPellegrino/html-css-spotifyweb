@@ -22,6 +22,11 @@ body {
     --text-white: rgba(255, 255, 255, 1);
     --text-grey: rgba(113, 113, 113, 1);
     --lime-green: rgba(173, 255, 47, 1);
+    
+}
+
+body {
+    font-family: sans-serif;
 }
 
 .flex {
@@ -90,21 +95,37 @@ main {
     width: calc(100% - 230px);
     height: 100%;
     background-color: var(--deep-blue);
+    overflow-y: auto;
 }
 
-
+/* barra laterale  */
+.barra-laterale a{
+    text-decoration: none;
+    color: var(--text-grey);
+}
 .barra-laterale {
     width: 230px;
-    height: 100%;
+    height: calc(100vh - 95px);
     background-color: var(--nero-100);
     display: flex;
     flex-flow: column;
 }
-
+.dist{
+    margin: 20px 0;
+}
 #logo {
-    height: 60px;
+    height: 50px;
     display: inline;
     margin-top: 20px;
+    margin-left: 20px;
+}
+.icone{
+    height: 40px;
+    padding-top: 10px;
+    vertical-align: text-bottom;
+}
+.icone-laterali{
+    margin-left: 20px;
 }
 
 /* inner content  */
@@ -193,24 +214,56 @@ footer {
     width: 100%;
     height: 95px;
     background-color: var(--dark-grey);
+    color: var(--text-white);
     position: fixed;
     bottom: 0;
     z-index: 900;
+    display: flex;
+    align-items: center;
+}
+
+.barra-musicale {
+    display: flex;
+    margin: 0 10px;
+    align-items: center;
+}
+
+#canzone {
+    height: 50px;
+}
+
+.description{
+    margin-left: 10px;
+}
+.simboli{
+    color: var(--text-grey);
+    padding-left: 30px;
+    font-size: 20px;
+}
+#simbolo{
+    padding-right: 5px;
 }
 
 /* hover */
 
-.album img:hover {
+.immagine:hover img{
     opacity: 0.5;
     transform: scale(1.1);
     cursor: pointer;
-    
+
 }
-.album:hover .fa-play-circle{
+.cover:hover img{
+    opacity: 0.5;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.album:hover .fa-play-circle {
     display: block;
 }
+
 .navbar a:hover {
-    color: red;
+    color: var(--lime-green);
 }
 
 .button-upgrade:hover {
