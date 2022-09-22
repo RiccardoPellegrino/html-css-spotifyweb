@@ -28,13 +28,41 @@ body {
 body {
     font-family: sans-serif;
 }
-
+.testo-grassetto{
+    text-transform: uppercase;
+}
 .flex {
     display: flex;
 }
+.flex-column {
+    flex-flow: column wrap;
+}
+.flex-row {
+    flex-flow: row wrap;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
 
 .color-white {
-    color: var(white);
+    color:white;
 
 }
 
@@ -109,24 +137,107 @@ main {
     background-color: var(--nero-100);
     display: flex;
     flex-flow: column;
+    color: white;
 }
-.dist{
-    margin: 20px 0;
+.uppercase { 
+    text-transform: uppercase;
 }
-#logo {
+
+.text-center {
+    text-align: center;
+}
+.text-gray {
+    color: var(--text-grey);
+}
+.spaziatura {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+#logo{
     height: 50px;
-    display: inline;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
-.icone{
-    height: 40px;
+
+.icona {
+    height: 30px;
+}
+.spazio {
+    margin-bottom: 10px;
+}
+
+.navigation span {
+    padding-left: 0.3rem;
+    color: var(--text-grey);
+}
+
+.playlist {
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.playlist span {
+    padding-top: 0.5rem;
+}
+
+.fa-square-plus {
+    font-size: 40px
+}
+
+.list {
+    padding-left: 10px;
+    padding-top: 20px;
+    line-height: 30px;
+    overflow-y: auto;
+}
+.user {
+    position: fixed;
+    width: 200px;
+    bottom: 95px;
+    background-color: var(--nero-100);
+}
+
+.user p {
+    padding-left: 10px;
+}
+
+.installa {
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.download {
+    height: 1.5rem;
+}
+
+hr {
+    width: auto;
+    border: 0.5px solid var(--text-grey);
+    width: 90%;
+}
+
+.profilo {
+    padding-left: 10px;
     padding-top: 10px;
-    vertical-align: text-bottom;
+    padding-bottom: 10px;
 }
-.icone-laterali{
-    margin-left: 20px;
+
+.img-profile {
+    background-color: var(--text-grey);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
 }
+
+.img-profile img {
+    height: 1.6rem;
+}
+
+.profile span {
+    padding-left: 10px;
+}
+
 
 /* inner content  */
 
@@ -270,3 +381,5 @@ footer {
     transform: scale(1.2);
     cursor: pointer;
 }
+
+/* media query */

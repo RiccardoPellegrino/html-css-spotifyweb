@@ -8,9 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Spotify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
+    <title>Spotify</title>
 </head>
 
 <body>
@@ -25,20 +32,50 @@
                 <figure>
                     <img id="logo" src="./img/logo.svg" alt="Spotify">
                 </figure>
-                <div class="dist">
-                    <div class="icone-laterali">
-                        <a href=""><img src="./img/home.svg" alt="HomePage" class="icone"></a>
+                <div class="flex flex-column align-start spaziatura">
+                    <div class="flex spazio align-center">
+                        <img src="img/home.svg" alt="HomePage" class="icona">
                         <span><a href="">Home</a></span>
                     </div>
-                    <div class="icone-laterali">
-                        <a href=""><img src="./img/search.svg" alt="HomePage" class="icone"></a>
+                    <div class="flex spazio align-center ">
+                        <img src="img/search.svg" alt="Cerca" class="icona">
                         <span><a href="">Cerca</a></span>
                     </div>
-                    <div class="icone-laterali">
-                        <a href=""><img src="./img/libreria.svg" alt="HomePage" class="icone"></a>
+                    <div class="flex spazio align-center">
+                        <img src="img/libreria.svg" alt="La Tua Libreria" class="icona">
                         <span><a href="">La tua libreria</a></span>
                     </div>
                 </div>
+                <div class="playlist">
+                    <h3 class="text-white uppercase">Playlist</h3>
+                    <span class="flex text-gray"><a href="" class="flex align-center"><i
+                                class="fa-solid fa-square-plus"></i><div style="padding-left: 10px;"> Crea Playlist </div></a></span>
+                </div>
+                <div class="list">
+                    <div><a href="#">Nome Playlist</a></div>
+                    <div><a href="#">Nome Playlist</a></div>
+                    <div><a href="#">Nome Playlist</a></div>
+                    <div><a href="#">Nome Playlist</a></div>
+                    <div><a href="#">Nome Playlist</a></div>
+                    <div><a href="#">Nome Playlist</a></div>
+                </div>
+
+                <div class="user flex flex-column">
+                    <a href="" class="flex installa">
+                        <img src="img/download.svg" alt="Download" class="download">
+                        <p class="text-subtitle">Installa app</p>
+                    </a>
+                    <hr>
+                    <div class="profilo">
+                        <a href="" class="flex align-center">
+                            <div class="img-profile">
+                                <img src="img/profile.svg" alt="Profilo">
+                            </div>
+                            <span ><strong class="color-white" style="padding-left: 10px;">John Doe</strong></span>
+                        </a>
+                    </div>
+                </div>
+
             </nav>
 
             <!-- fine barra laterale -->
