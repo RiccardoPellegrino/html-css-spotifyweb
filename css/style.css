@@ -183,7 +183,13 @@ main {
 #logo {
     height: 50px;
     margin-top: 20px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    display: inline;
+}
+
+#logo-small {
+    width: 50px;
+    display: none;
 }
 
 .inner {
@@ -480,19 +486,58 @@ footer .track-bar progress {
 /* media query */
 @media screen and (max-width: 1200px) {
     .album {
-        width: calc(100% / 4);
+        width: calc(100% / 4 - 20px);
     }
 }
 
 @media screen and (max-width: 950px) {
     .album {
-        width: calc(100% / 3);
+        width: calc(100% / 3 - 20px);
+    }
+
+    .sparisci1 {
+        display: none;
     }
 }
 
 @media screen and (max-width: 760px) {
     .album {
-        width: calc(100% / 2);
+        width: calc(100% / 2 - 20px);
+    }
+
+    .playlist {
+        display: none;
+    }
+
+    .barra-alto a {
+        display: none;
+    }
+
+    .barra-laterale {
+        width: 55px;
+    }
+
+    .main-content {
+        width: calc(100% + 400px);
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #logo-small {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .sparisci {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 650px) {
+    .sparisci2{
+        display: none;
     }
 }
 
