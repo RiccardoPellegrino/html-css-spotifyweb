@@ -431,11 +431,19 @@ footer .track-bar progress {
 
 }
 
+.piccolo-testo {
+    font-size: 12px;
+}
+
 #volume {
     margin-right: 10px;
 }
 
 /* hover */
+.piccolo-testo:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 .immagine:hover img {
     opacity: 0.5;
