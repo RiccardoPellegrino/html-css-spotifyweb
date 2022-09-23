@@ -536,8 +536,9 @@ footer .footer-center .controls i.fa-circle-play {
     }
 
 }
+
 @media screen and (max-width: 650px) {
-    .sparisci2{
+    .sparisci2 {
         display: none;
     }
 }
