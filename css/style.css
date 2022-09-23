@@ -432,7 +432,7 @@ footer .footer-center .controls i.fa-circle-play {
 
 }
 
-footer .track-bar progress {
+.misur {
     width: 30vw;
 
 }
@@ -441,7 +441,7 @@ footer .track-bar progress {
     font-size: 12px;
 }
 
-#volume {
+.volume {
     margin-right: 10px;
 }
 
@@ -482,6 +482,7 @@ footer .track-bar progress {
     color: white;
 
 }
+
 
 /* media query */
 @media screen and (max-width: 1200px) {
