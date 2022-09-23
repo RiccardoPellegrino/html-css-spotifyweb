@@ -38,7 +38,7 @@ body {
 }
 
 .flex-column {
-    flex-flow: column;
+    flex-direction: column;
 }
 
 .flex-row {
@@ -136,6 +136,7 @@ main {
     height: calc(100% - 80px);
     overflow: hidden;
     width: 100%;
+    display: flex;
 }
 
 .main-content {
@@ -184,9 +185,11 @@ main {
     margin-top: 20px;
     margin-left: 10px;
 }
-.inner{
+
+.inner {
     height: 100%;
 }
+
 .icona:hover {
     border-left: 2px solid var(--lime-green);
 }
@@ -210,7 +213,7 @@ main {
     overflow: hidden;
     padding-top: 20px;
     padding-left: 10px;
-    
+
 }
 
 .playlist span {
@@ -223,13 +226,13 @@ main {
 
 .list {
     max-height: 200px;
-    /* height: 50%; */
+    height: 75%;
     padding-left: 10px;
     padding-top: 20px;
     line-height: 30px;
     width: 100%;
     overflow-y: auto;
-   
+
 }
 
 .testa {
@@ -273,7 +276,7 @@ hr {
 }
 
 .img-profile img {
-    height: 1.6rem;
+    height: 25px;
 }
 
 .profile span {
@@ -351,13 +354,13 @@ hr {
 .option {
     font-size: 14px;
     margin-right: 30px;
-    color: #616369;
+
     font-weight: 700;
     /* padding-top: 100px; */
 }
 
 .option a {
-    color: white;
+    color: #616369;
     text-decoration: none;
 }
 
@@ -383,44 +386,44 @@ footer i {
     cursor: pointer;
 }
 
-footer .foot-left i {
+footer .footer-left i {
     padding-right: 30px;
 }
 
-footer .foot-right i {
+footer .footer-right i {
     padding-right: 30px;
     padding-left: 10px;
 }
 
-footer .foot-left .playing-album {
+footer .footer-left .playing-album {
     padding-right: 10px
 }
 
-footer .foot-left .playing-album div:first-of-type {
+footer .footer-left .playing-album div:first-of-type {
     margin-right: 10px;
 }
 
-footer .foot-left img {
+footer .footer-left img {
     margin-left: 10px;
     width: 50px;
 }
 
-footer .foot-left i {
+footer .footer-left i {
     color: var(--text-grey);
 }
 
-footer .foot-center .controls {
+footer .footer-center .controls {
     padding-bottom: 10px;
 }
 
-footer .foot-center .controls i {
+footer .footer-center .controls i {
     padding-right: 10px;
-   
+
 }
 
-footer .foot-center .controls i.fa-circle-play {
+footer .footer-center .controls i.fa-circle-play {
     font-size: 23px;
-  
+
 }
 
 footer .track-bar progress {
@@ -479,7 +482,7 @@ footer .track-bar progress {
     }
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 760px) {
     .album {
         width: calc(100% / 2);
     }
