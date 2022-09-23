@@ -49,9 +49,9 @@ body {
     align-items: center;
 }
 
-/* .align-start {
+.align-start {
     align-items: flex-start;
-} */
+}
 
 .justify-center {
     justify-content: center;
@@ -159,7 +159,7 @@ main {
     /* display: flex; */
     /* flex-flow: column; */
     color: white;
-    min-height: 480px;
+    min-height: 430px;
 }
 
 .uppercase {
@@ -389,10 +389,11 @@ footer .foot-left i {
 
 footer .foot-right i {
     padding-right: 30px;
+    padding-left: 10px;
 }
 
 footer .foot-left .playing-album {
-    padding-right: 2rem;
+    padding-right: 10px
 }
 
 footer .foot-left .playing-album div:first-of-type {
