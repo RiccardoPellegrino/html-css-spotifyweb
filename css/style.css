@@ -22,21 +22,25 @@ body {
     --text-white: rgba(255, 255, 255, 1);
     --text-grey: rgba(113, 113, 113, 1);
     --lime-green: rgba(173, 255, 47, 1);
-    
+
 }
 
 body {
     font-family: sans-serif;
 }
-.testo-grassetto{
+
+.testo-grassetto {
     text-transform: uppercase;
 }
+
 .flex {
     display: flex;
 }
+
 .flex-column {
-    flex-flow: column wrap;
+    flex-flow: column;
 }
+
 .flex-row {
     flex-flow: row wrap;
 }
@@ -45,9 +49,9 @@ body {
     align-items: center;
 }
 
-.align-start {
+/* .align-start {
     align-items: flex-start;
-}
+} */
 
 .justify-center {
     justify-content: center;
@@ -62,8 +66,17 @@ body {
 }
 
 .color-white {
-    color:white;
+    color: white;
 
+}
+
+h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-size: 30px;
 }
 
 /* Utilities */
@@ -81,7 +94,7 @@ body {
     border-radius: 30px;
     font-size: 12px;
     margin-right: 40px;
-    margin-top: 40px;
+    margin-top: 30px;
     transition: transform 1s;
 }
 
@@ -119,6 +132,12 @@ main {
 
 }
 
+.barra-alto {
+    height: calc(100% - 80px);
+    overflow: hidden;
+    width: 100%;
+}
+
 .main-content {
     width: calc(100% - 230px);
     height: 100%;
@@ -128,41 +147,56 @@ main {
 
 /* barra laterale  */
 
-.barra-laterale a{
+.barra-laterale a {
     text-decoration: none;
     color: var(--text-grey);
 }
+
 .barra-laterale {
     width: 230px;
-    height: calc(100vh - 95px);
+    height: 100%;
     background-color: var(--nero-100);
-    display: flex;
-    flex-flow: column;
+    /* display: flex; */
+    /* flex-flow: column; */
     color: white;
+    min-height: 480px;
 }
-.uppercase { 
+
+.uppercase {
     text-transform: uppercase;
 }
 
 .text-center {
     text-align: center;
 }
+
 .text-gray {
     color: var(--text-grey);
 }
+
 .spaziatura {
     padding-left: 10px;
     padding-top: 20px;
 }
-#logo{
+
+#logo {
     height: 50px;
     margin-top: 20px;
     margin-left: 10px;
 }
+.inner{
+    height: 100%;
+}
+.icona:hover {
+    border-left: 2px solid var(--lime-green);
+}
 
 .icona {
     height: 30px;
+    border-left: 2px solid rgb(0 0 0);
+    height: 30px;
 }
+
 .spazio {
     margin-bottom: 10px;
 }
@@ -173,12 +207,14 @@ main {
 }
 
 .playlist {
+    overflow: hidden;
     padding-top: 20px;
     padding-left: 10px;
+    
 }
 
 .playlist span {
-    padding-top: 0.5rem;
+    padding-top: 30px;
 }
 
 .fa-square-plus {
@@ -186,30 +222,34 @@ main {
 }
 
 .list {
+    max-height: 200px;
+    /* height: 50%; */
     padding-left: 10px;
     padding-top: 20px;
     line-height: 30px;
+    width: 100%;
     overflow-y: auto;
+   
 }
 
-.user {
-    position: fixed;
-    width: 200px;
-    bottom: 95px;
+.testa {
+    height: 80px;
+    width: 100%;
     background-color: var(--nero-100);
 }
 
-.user p {
+.testa p {
     padding-left: 10px;
 }
 
 .installa {
+    /* padding-top: 120px; */
     padding-bottom: 10px;
     padding-left: 10px;
 }
 
 .download {
-    height: 1.5rem;
+    height: 20px;
 }
 
 hr {
@@ -248,6 +288,7 @@ hr {
     color: white;
     margin-top: 0px;
     overflow-y: auto;
+    padding-top: 100px;
 }
 
 .navbar {
@@ -275,6 +316,10 @@ hr {
     text-align: center;
     width: calc((100% / 6) - 20px);
     margin: 0 10px;
+}
+
+.album span {
+    font-size: 14px;
 }
 
 .immagine {
@@ -308,7 +353,7 @@ hr {
     margin-right: 30px;
     color: #616369;
     font-weight: 700;
-    padding-top: 100px;
+    /* padding-top: 100px; */
 }
 
 .option a {
@@ -331,41 +376,71 @@ footer {
     position: fixed;
     bottom: 0;
     z-index: 900;
-    display: flex;
-    align-items: center;
+
 }
 
-.barra-musicale {
-    display: flex;
-    margin: 0 10px;
-    align-items: center;
+footer i {
+    cursor: pointer;
 }
 
-#canzone {
-    height: 50px;
+footer .foot-left i {
+    padding-right: 30px;
 }
 
-.description{
+footer .foot-right i {
+    padding-right: 30px;
+}
+
+footer .foot-left .playing-album {
+    padding-right: 2rem;
+}
+
+footer .foot-left .playing-album div:first-of-type {
+    margin-right: 10px;
+}
+
+footer .foot-left img {
     margin-left: 10px;
+    width: 50px;
 }
-.simboli{
+
+footer .foot-left i {
     color: var(--text-grey);
-    padding-left: 30px;
-    font-size: 20px;
 }
-#simbolo{
-    padding-right: 5px;
+
+footer .foot-center .controls {
+    padding-bottom: 1rem;
+}
+
+footer .foot-center .controls i {
+    padding-right: 1rem;
+    font-size: var(--font-s);
+}
+
+footer .foot-center .controls i.fa-circle-play {
+    font-size: 23px;
+    padding: 0 1.2rem 0 0.2rem;
+}
+
+footer .track-bar progress {
+    width: 30vw;
+
+}
+
+#volume {
+    margin-right: 10px;
 }
 
 /* hover */
 
-.immagine:hover img{
+.immagine:hover img {
     opacity: 0.5;
     transform: scale(1.1);
     cursor: pointer;
 
 }
-.cover:hover img{
+
+.cover:hover img {
     opacity: 0.5;
     transform: scale(1.1);
     cursor: pointer;
@@ -383,10 +458,34 @@ footer {
     transform: scale(1.2);
     cursor: pointer;
 }
-.barra-laterale a:hover{
+
+.barra-laterale a:hover {
     cursor: pointer;
     color: white;
-    
+
 }
 
 /* media query */
+@media screen and (max-width: 1200px) {
+    .album {
+        width: calc(100% / 4);
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .album {
+        width: calc(100% / 3);
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .album {
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .album {
+        width: 100%;
+    }
+}
