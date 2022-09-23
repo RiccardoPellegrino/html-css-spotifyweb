@@ -414,12 +414,12 @@ footer .foot-center .controls {
 
 footer .foot-center .controls i {
     padding-right: 1rem;
-    font-size: var(--font-s);
+   
 }
 
 footer .foot-center .controls i.fa-circle-play {
     font-size: 23px;
-    padding: 0 1.2rem 0 0.2rem;
+  
 }
 
 footer .track-bar progress {
